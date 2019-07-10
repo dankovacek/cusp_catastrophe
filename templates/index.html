@@ -1,0 +1,60 @@
+{% extends base %}
+
+{% block preamble %}
+{# This line loads the vis.js library for custom model extension to use #}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+
+<style>
+    h1 {
+        margin: 2em 0 0 0;
+        color: #2e484c;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
+
+    a:link {
+        font-weight: bold;
+        text-decoration: none;
+        color: #0d8ba1;
+    }
+
+    a:visited {
+        font-weight: bold;
+        text-decoration: none;
+        color: #1a5952;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: underline;
+        color: #9685BA;
+    }
+
+    p {
+        font: "Libre Baskerville", sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    code {
+        color: #336699;
+    }
+</style>
+{% endblock %}
+
+{% block contents %}
+<div style="width: 1200px">
+    <h1>Population Dynamics: Cusp Catastrophe </h1>
+</div>
+{{ super() }}
+
+<hX>References:</hX>
+<ol>
+    <li>Strogatz, Steven H. “Nonlinear Dynamics And Chaos: With Applications To Physics, Biology,
+        Chemistry, And Engineering,” 69-72.</li>
+</ol>
+
+
+{% endblock %}
