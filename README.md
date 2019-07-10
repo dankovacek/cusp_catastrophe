@@ -39,7 +39,7 @@ Install requirements
 Run Bokeh server (from project root folder)
 `$>bokeh serve .`
 
-Open browser and navigate to `localhost:5006/chaos_nonlinear_dynamics`
+Open browser and navigate to `localhost:5006/cusp_catastrophe`
 
 
 ## Credits
