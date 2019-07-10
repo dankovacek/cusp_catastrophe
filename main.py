@@ -1,12 +1,4 @@
-''' Present an interactive function explorer with slider widgets.
-Scrub the sliders to change the properties of the ``sin`` curve, or
-type into the title text box to update the title of the plot.
-Use the ``bokeh serve`` command to run the example by executing:
-    bokeh serve sliders.py
-at your command prompt. Then navigate to the URL
-    http://localhost:5006/sliders
-in your browser.
-'''
+import pandas as pd
 import numpy as np
 
 from bokeh.io import curdoc
@@ -15,12 +7,10 @@ from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 from bokeh.palettes import Spectral5, Spectral11
-
-import pandas as pd
-import numpy as np
-
-from surface3d import Surface3d
 from bokeh.driving import count
+
+
+
 
 # Set up widgets
 area = Slider(title="A (area)", value=0.65, start=0.05, end=2, step=0.1)
